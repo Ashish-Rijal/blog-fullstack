@@ -29,7 +29,7 @@ export default function App() {
 
   const getAllFunction = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/get-all-blog");
+      const response = await axios.get("https://blog-backend-rgjz.onrender.com/get-all-blog");
       console.log(response.data.data);
       setblog(response.data.data)
     } catch (error) {
